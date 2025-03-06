@@ -1,0 +1,21 @@
+<div class="product-list" id="upperDiv">
+    <h2>Product List</h2>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  
+    <ul class="product-list">
+        <li *ngFor="let product of products" class="product-card">
+          <div class="product-item">
+            <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image"/>
+            <div id="productData">
+            <h3>{{ product.name }}</h3>
+            <p>Price: ${{ product.price }}</p>
+        </div>
+            <button class="view-details-btn">View Details</button>
+          </div>
+        </li>
+      </ul>
+      
+  </div>
+  

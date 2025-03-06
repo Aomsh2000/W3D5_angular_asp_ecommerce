@@ -1,0 +1,90 @@
+/* Navigation Bar Styles */
+
+.navbar {
+    background-color: #007bff;
+    padding: 15px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+  }
+  
+  /* Logo Style */
+  .logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Footer Styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Copyright Style */
+  .footer p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  
