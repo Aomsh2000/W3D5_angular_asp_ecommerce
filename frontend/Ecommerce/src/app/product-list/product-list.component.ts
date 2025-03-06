@@ -3,9 +3,10 @@ import { ProductService } from '../product.service';  // Import ProductService
 import { Router } from '@angular/router';  // Import Router for navigation to product details
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-product-list',
-  imports:[CommonModule,RouterOutlet],
+  imports:[CommonModule,RouterOutlet,RouterLink],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
