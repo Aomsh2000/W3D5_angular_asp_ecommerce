@@ -41,6 +41,12 @@
 
 }
 /* Button Styling */
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 .view-details-btn {
   background-color: #007bff;
   color: #fff;

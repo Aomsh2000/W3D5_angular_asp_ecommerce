@@ -12,7 +12,10 @@
             <h3>{{ product.name }}</h3>
             <p>Price: ${{ product.price }}</p>
         </div>
+        <div class="buttons">
             <button class="view-details-btn" [routerLink]="['/product-detail', product.id]">View Details</button>
+            <button class="view-details-btn" (click)="addToCart(product)">Add to Cart</button>
+        </div>
           </div>
         </li>
       </ul>
