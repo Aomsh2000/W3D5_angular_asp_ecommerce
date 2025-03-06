@@ -4,8 +4,9 @@
     <a href="/" class="logo">E-Commerce</a>
     <ul class="navbar-links">
       <li><a href="/">Home</a></li>
-      <li><a href="/products">Products</a></li>
-      <li><a href="/cart">Cart</a></li>
+      <li><a routerLink="/products">Products</a>
+        </li>
+      <li><a routerLink="/cart">Cart ({{ cartService.getTotalItemsCount() }})</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
   </div>

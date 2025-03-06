@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';  // Import ProductService
+import {CartService} from '../cart.service';
 import { Router } from '@angular/router';  // Import Router for navigation to product details
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
@@ -14,7 +15,9 @@ export class ProductListComponent implements OnInit {
   products: any[] = [];  // To hold the list of products
   errorMessage: string = '';  // To display any errors if fetching data fails
 
-  constructor(private productService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService,
+     private router: Router,
+     private cartService: CartService) { }
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe(data =>
@@ -28,8 +31,8 @@ export class ProductListComponent implements OnInit {
     );
   }
 
-  // Method to navigate to product details page
- /*  viewProductDetails(productId: number): void {
-    this.router.navigate(['/product-details', productId]);  // Navigate to product details page with the product ID
-  } */
+  // Add product to cart
+  addToCart(product: any): void {
+    this.cartService.addToCart(product);
+  }
 }
